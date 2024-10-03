@@ -33,7 +33,7 @@ are written to [`chopstrack.csv`](chopstrack.csv).
 Moreover, each day the hundred positions with the currently shortest PVs on cdb
 (ignoring PVs ending in a two-fold repetition)
 are written to [`chops_daily_shortest.epd`](chops_daily_shortest.epd), and
-the positions with absolute evaluations in the interval [80, 110]
+the positions with absolute evaluations in the interval [90, 105]
 are written to [`chops_daily_edgy.epd`](chops_daily_edgy.epd).
 
 ---

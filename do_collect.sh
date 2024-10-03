@@ -16,7 +16,7 @@ mv "$temp_file" chops_cdbpv.epd
 
 python ../caissatrack/caissatrack.py chops_cdbpv.epd >>chopstrack.csv
 python ../caissatrack/extract_fens.py chops_cdbpv.epd --shortest 100 --ignore2folds >chops_daily_shortest.epd
-python ../caissatrack/extract_fens.py chops_cdbpv.epd --evalMin 80 --evalMax 110 >chops_daily_edgy.epd
+python ../caissatrack/extract_fens.py chops_cdbpv.epd --evalMin 90 --evalMax 105 >chops_daily_edgy.epd
 
 git add chops_cdbpv.epd chopstrack.csv chops_daily_shortest.epd chops_daily_edgy.epd
 git diff --staged --quiet || git commit -m "update data"
