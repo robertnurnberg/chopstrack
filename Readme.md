@@ -3,10 +3,10 @@
 Track the evaluations of the book exits from [`chops.pgn`](chops.pgn)
 on [chessdb.cn](https://chessdb.cn/queryc_en/) (cdb). The name of the book
 stands for Complex Human OPeningS.
-The book was created by Joost VandeVondele in October 2024, and was originally
+The book is based on the book created by Joost VandeVondele in October 2024, that was originally
 named
 `book_caissa_minElo2500_maxPlies24_cdb-082-102_softmax_d4_a10_4d_0.99_1.5d.pgn`
-when it was announced on [discord](https://discord.com/channels/435943710472011776/1101022188313772083/1290411267412066399). It contains a total of
+when it was announced on [discord](https://discord.com/channels/435943710472011776/1101022188313772083/1290411267412066399). The original book contained a total of
 7320 lines from games in [Caissabase](http://www.caissabase.co.uk) that were
 played between 2500+ Elo human players and that lead to positions that
 current engines judge to be on the edge between a win and a draw. In addition,
@@ -15,12 +15,11 @@ both sides have a variety of playable options,
 meaning that (engine) games starting from these positions are likely to 
 diverge quickly.
  
-The lines in `chops.pgn` are between 2 and 24 plies long, with an average of 
-16 plies. They lead to a total of 3797 unique positions (FENs with move
-counters), stored in 
-[`chops_with_move_counters.epd`](chops_with_move_counters.epd), amongst which 
-are 3588 unique positions (EPDs without move counters), stored in 
-[`chops.epd`](chops.epd).
+The lines in `chops.pgn` are a subset from the lines in the original book that
+lead to the same 3588 unique positions (without move counters), with shorter
+lines being preferred where possible.
+The lines are between 2 and 24 plies long, with an average of 
+16.8 plies. The 3588 unique book exits are stored in [`chops.epd`](chops.epd).
 This repo tracks the evaluations of the positions in `chops.epd` on cdb.
 On cdb they have an average depth of 16.6 plies, as well as 30.6 pieces on
 average. No position has fewer than 22 pieces on the board.
