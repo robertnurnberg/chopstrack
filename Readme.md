@@ -47,12 +47,14 @@ are written to [`chops_daily_edgy.epd`](chops_daily_edgy.epd).
 
 ## Progress
 
-The following graph attempts to measure the progress cdb makes in exploring
+The following graphs attempt to measure the progress cdb makes in exploring
 and evaluating the positions in `chops.epd`. See
 [caissatrack](https://github.com/robertnurnberg/caissatrack)
 for a precise description of the plotted indicators.
 
 <p align="center"> <img src="chopstracktime.png?raw=true"> </p>
+
+<p align="center"> <img src="chopstracktime-100.png?raw=true"> </p>
 
 ---
 
