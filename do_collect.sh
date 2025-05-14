@@ -3,21 +3,34 @@
 # exit on errors
 set -e
 
-temp_file="_tmp_chops_cdbpv.epd"
+PREFIX="chops"
+SOURCE="${PREFIX}.epd"
+DEST="${PREFIX}_cdbpv.epd"
+TEMP_FILE="_tmp_$DEST"
+TRIMMED="${PREFIX}_trimmed.epd"
+ORACLE="../caissatrack/caissa_sorted_100000_cdbpv.epd ../ecotrack/eco_cdbpv.epd"
+FILTER="python ../cdblib/addons/fens_filter_overlap.py --saveMemory --noStats"
+CDBBULK="python ../cdblib/cdbbulkpv.py -s -c 8 --stable --user rob"
+SCORE="python ../cdblib/addons/score_fens_locally.py"
 
-if [ -f "$temp_file" ]; then
-    echo "$temp_file already exists. Exiting."
+if [ -f "$TEMP_FILE" ]; then
+    echo "$TEMP_FILE already exists. Exiting."
     exit 0
 fi
 
-python ../cdblib/cdbbulkpv.py -s -c 8 --stable --user rob chops.epd >"$temp_file"
+$FILTER $SOURCE $ORACLE >"$TRIMMED"
+$CDBBULK "$TRIMMED" >"$TEMP_FILE"
+$SCORE $SOURCE $TEMP_FILE $ORACLE >"$DEST"
+rm "$TEMP_FILE"
 
-mv "$temp_file" chops_cdbpv.epd
+CSV="${PREFIX}track.csv"
+SHORTEST="${PREFIX}_daily_shortest.epd"
+EDGY="${PREFIX}_daily_edgy.epd"
 
-python ../caissatrack/caissatrack.py chops_cdbpv.epd >>chopstrack.csv
-python ../caissatrack/extract_fens.py chops_cdbpv.epd --shortest 100 --ignore2folds >chops_daily_shortest.epd
-python ../caissatrack/extract_fens.py chops_cdbpv.epd --evalMin 90 --evalMax 105 >chops_daily_edgy.epd
+python ../caissatrack/caissatrack.py "$DEST" >>"$CSV"
+python ../caissatrack/extract_fens.py "$DEST" --shortest 100 --ignore2folds >"$SHORTEST"
+python ../caissatrack/extract_fens.py "$DEST" --evalMin 90 --evalMax 105 >"$EDGY"
 
-git add chops_cdbpv.epd chopstrack.csv chops_daily_shortest.epd chops_daily_edgy.epd
+git add "$DEST" "$CSV" "$SHORTEST" "$EDGY"
 git diff --staged --quiet || git commit -m "update data"
 git push origin main >&push.log
