@@ -18,8 +18,6 @@ r1bq1rk1/4ppbp/1pnp1np1/pN6/4P3/1BN1B3/PPP2PPP/R2Q1RK1 w - - ; cdb eval: 68; PV 
 r1bq1rk1/p3ppbp/n2p1np1/2pP4/2B1P3/1P3N2/PB1N1PPP/R2QK2R w KQ - ; cdb eval: 89; PV length: 8
 r1bq1rk1/pp3pbp/1n1p1np1/3Pp3/4P3/2N1BP2/PP1QN1PP/R3KB1R w KQ - ; cdb eval: 94; PV length: 8
 r1bqk2r/pp2ppbp/3p1np1/2pP4/2P1P3/2Nn1N1P/PP3PP1/R1BQK2R w KQkq - ; cdb eval: 102; PV length: 8
-r1bqnrk1/pp3pbp/3p2p1/n1pPp3/2P1P3/2N3P1/PP1N1PBP/R1BQ1RK1 w - - ; cdb eval: 89; PV length: 8
-r1bqnrk1/pp3pbp/3p2p1/n1pPp3/2P5/1PN3P1/P2NPPBP/R1BQ1RK1 w - - ; cdb eval: 89; PV length: 8
 r2q1rk1/1p1nbppp/p1npb3/4p1P1/4P2P/1NN1B3/PPP1BP2/R2QK2R w KQ - ; cdb eval: 86; PV length: 8
 r2q1rk1/pbp1ppbp/1pnp1np1/8/2PPP3/2N2N2/PPQ1BPPP/R1B2RK1 w - - ; cdb eval: 84; PV length: 8
 r2q1rk1/ppp1ppbp/2n1b1p1/3n4/3P1B2/2N1PN2/PP2BPPP/2RQK2R w K - ; cdb eval: 94; PV length: 8
@@ -76,6 +74,7 @@ r1b2rk1/1p1nqpbp/p1pp1np1/4p3/2PPP3/2N1BN2/PPQ1BPPP/3R1RK1 w - - ; cdb eval: 115
 r1b2rk1/2qnbppp/p2p1n2/1p1Pp3/4P3/2N1B3/PP1NBPPP/R2Q1RK1 w - - ; cdb eval: 113; PV length: 11
 r1bq1rk1/3nppbp/P2p1np1/2pP4/4P3/2NB4/PP2NPPP/R1BQ1RK1 b - - ; cdb eval: -66; PV length: 11
 r1bq1rk1/4ppbp/p1p2np1/1p6/3PP3/2N2N1P/PP3PP1/R1BQ1RK1 w - - ; cdb eval: 81; PV length: 11
+r1bq1rk1/p4pb1/1p1p1npp/n1pPp3/1PP1P3/P1N2N2/3BBPPP/R2Q1RK1 b - - ; cdb eval: -76; PV length: 11
 r1bq1rk1/pp3pb1/n1pp1np1/3Pp2p/2P1P2P/2N1BP2/PP2B1P1/R2QK1NR w KQ - ; cdb eval: 100; PV length: 11
 r1bq1rk1/ppp2ppp/3b1n2/8/2B2P2/2N1P3/PPQB2PP/R3K2R w KQ - ; cdb eval: 94; PV length: 11
 r1bqk2r/1pp2pbn/3p2p1/p1nPp1Pp/2P1P3/2N1BP2/PP2B2P/R2QK1NR w KQkq - ; cdb eval: 92; PV length: 11
@@ -88,6 +87,7 @@ r2q1rk1/ppp1bppp/2np1n2/8/4PBb1/2N2N1P/PPPQ1PP1/2KR1B1R b - - ; cdb eval: -129; 
 r2qk1nr/pbp2pbp/1p1pp1p1/3P4/2P1P3/2NQ4/PP2NPPP/R1B2RK1 w kq - ; cdb eval: 72; PV length: 11
 r2qk2r/2pp1ppp/bpn1pn2/8/1bPP4/p1N2NP1/PPQ1PPBP/R1B2RK1 w kq - ; cdb eval: 92; PV length: 11
 r2qkbnr/ppp2ppp/2n1b3/4p3/2Pp4/1P4P1/P2PPPBP/RNBQK1NR w KQkq - ; cdb eval: -105; PV length: 11
+rn2r1k1/pp2ppbp/2p3p1/5q2/3P4/2P2N1P/PP3PP1/R1BQR1K1 w - - ; cdb eval: 83; PV length: 11
 rn3rk1/1p1nppbp/pq1p2p1/2pP4/P1P1P1b1/2N1BN2/1P2BPPP/2RQK2R w K - ; cdb eval: 111; PV length: 11
 rnb1k1nr/ppp2ppp/8/2b5/2pNP3/2N5/PP3PPP/R1B1KB1R w KQkq - ; cdb eval: 106; PV length: 11
 rnb1k2r/p4ppp/2p2n2/2b5/PppNP3/4BP2/1P4PP/R2NKB1R b KQkq - ; cdb eval: -112; PV length: 11
