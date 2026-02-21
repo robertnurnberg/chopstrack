@@ -58,6 +58,7 @@ r1bqk2r/pp3ppp/2n1p2n/2b1P3/3p1P2/8/PPPN1BPP/R2QKBNR w KQkq - ; cdb eval: 91; PV
 r1bqk2r/pppn2bp/5p1n/4p1pP/2P1P3/2N2N2/PP2BPP1/R1BQK2R w KQkq - ; cdb eval: 104; PV length: 9
 r1bqkb1r/2p1pp1p/p1pp2p1/3nP3/3P4/5N2/PPP2PPP/RNBQ1RK1 w kq - ; cdb eval: 79; PV length: 9
 r1bqnrk1/3nbppp/pp1p4/2pPp3/P3P3/1PNB1N2/2P2PPP/R1BQR1K1 w - - ; cdb eval: 106; PV length: 9
+r1bqnrk1/pp1n1pbp/3p2p1/2pP4/4P3/2N5/PP1NBPPP/R1BQ1RK1 w - - ; cdb eval: 89; PV length: 9
 r1bqr1k1/pp1n1pb1/2pp1npp/4p3/2PPP3/2N2N2/PP3PPP/1RBQRBK1 w - - ; cdb eval: 97; PV length: 9
 r2q1rk1/1p1bbppp/p1nppn2/8/2PNPP2/2NBB3/PP4PP/R2Q1RK1 w - - ; cdb eval: 101; PV length: 9
 r2q1rk1/pp2ppbp/1n2bnp1/3p4/3P1B2/2NBPN1P/PP3PP1/R2Q1RK1 b - - ; cdb eval: -82; PV length: 9
@@ -83,6 +84,7 @@ r1bqkb1r/ppp2ppp/2np1n2/3Pp3/4P3/4BP2/PPP3PP/RN1QKBNR b KQkq - ; cdb eval: -96; 
 r1bqnrk1/pp1n1pbp/2pp2p1/4p3/2PPP3/2N2N2/PP3PPP/R1BQRBK1 w - - ; cdb eval: 83; PV length: 10
 r1nq1rk1/pp1nbppp/2p1p1b1/3pP3/P2P2P1/8/1PPNBP1P/R1BQNRK1 w - - ; cdb eval: 120; PV length: 10
 r2q1rk1/1p1nbppp/p1pp1n2/3Pp3/2P1P3/2N1B2P/PP1NbPP1/R2Q1RK1 w - - ; cdb eval: 61; PV length: 10
+r2q1rk1/1p3pb1/2pp1npp/p2Pp1B1/1nP1P1b1/2N2N2/PP2BPPP/R2QR1K1 w - - ; cdb eval: 88; PV length: 10
 r2q1rk1/pp1nbppp/2pp1n2/4p3/2PPP3/2N1BB2/PP3PPP/R2Q1RK1 w - - ; cdb eval: 94; PV length: 10
 r2qk2r/1b1nbpp1/p2p1n2/1p2pP1p/4P3/1BN3N1/PPP3PP/R1BQ1RK1 w kq - ; cdb eval: -119; PV length: 10
 r2qk2r/pp1nnpb1/2p1p2p/3pPbp1/3P4/2P5/PP1NBPPP/R1BQNRK1 w kq - ; cdb eval: 41; PV length: 10
@@ -96,5 +98,3 @@ rn1q1rk1/pbpp2pp/1p2pn2/5p2/2PP4/P3PP1N/1PQ3PP/R1B1KB1R w KQ - ; cdb eval: 86; P
 rn1q1rk1/pppn1pbp/6p1/4p3/2PPP3/2N1BB2/PP4PP/R2QK2R w KQ - ; cdb eval: 107; PV length: 10
 rn1qkb1r/1b1n1ppp/p2pp3/6PP/1p1NP3/8/PPP1NP2/R1BQKB1R w KQkq - ; cdb eval: 58; PV length: 10
 rn1qkb1r/1p2pppp/p1p2n2/2PpNb2/3P4/2N2P2/PP2P1PP/R1BQKB1R b KQkq - ; cdb eval: -90; PV length: 10
-rnbq1rk1/pp2npbp/3p2p1/2pPp3/2P1P3/2NB1N2/PP3PPP/R1BQ1RK1 w - - ; cdb eval: 97; PV length: 10
-rnbq1rk1/pp3pb1/3p1npp/2pPp3/2P1PB2/2NB4/PP3PPP/R2QK1NR w KQ e6 ; cdb eval: 112; PV length: 10
